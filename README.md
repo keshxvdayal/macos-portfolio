@@ -43,7 +43,7 @@ An interactive portfolio website that recreates the experience of macOS desktop 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/xiaopeng-ye/macos-portfolio.git
+git clone https://github.com/keshxvdayal/macos-portfolio.git
 cd macos-portfolio
 ```
 
