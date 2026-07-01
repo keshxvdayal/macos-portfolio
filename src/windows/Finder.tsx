@@ -14,7 +14,13 @@ const Finder = () => {
   const openItem = (item: FileItem) => {
     if (item.fileType === "pdf") return openWindow("resume");
     if (item.kind === "folder") return setActiveLocation(item as Location);
-    if (item.fileType === "url" && item.href) return openWindow("safari", item);
+    if (item.fileType === "url" && item.href) {
+      // Open GitHub links in new tab, others in Safari
+      if (item.href.includes("github.com")) {
+        return window.open(item.href, "_blank");
+      }
+      return openWindow("safari", item);
+    }
 
     openWindow(`${item.fileType}${item.kind}`, item);
   };

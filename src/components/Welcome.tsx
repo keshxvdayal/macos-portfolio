@@ -79,7 +79,7 @@ const Welcome = () => {
   }, []);
 
   return (
-    <section id="welcome">
+    <section id="welcome" className="ml-[350px]">
       <p ref={subtitleRef}>
         {renderText(
           "Hey, I'm Keshav Dayal! Welcome to my",
