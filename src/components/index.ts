@@ -3,3 +3,4 @@ export { default as Welcome } from "./Welcome";
 export { default as Dock } from "./Dock";
 export { default as Home } from "./Home";
 export { default as WindowControls } from "./WindowControls";
+export { default as FullscreenButton } from "./FullscreenButton";

@@ -17,6 +17,11 @@ export const navLinks: NavLink[] = [
     type: "finder",
   },
   {
+    id: 2,
+    name: "About",
+    type: "about",
+  },
+  {
     id: 3,
     name: "Contact",
     type: "contact",
@@ -31,19 +36,19 @@ export const navLinks: NavLink[] = [
 export const navIcons: NavIcon[] = [
   {
     id: 1,
-    img: "/icons/wifi.svg",
+    img: "/images/wifi.png",
   },
   {
     id: 2,
-    img: "/icons/search.svg",
+    img: "/images/search.png",
   },
   {
     id: 3,
-    img: "/icons/user.svg",
+    img: "/images/user.png",
   },
   {
     id: 4,
-    img: "/icons/mode.svg",
+    img: "/images/mode.png",
   },
 ];
 
@@ -136,7 +141,7 @@ export const socials: Social[] = [
     text: "Portfolio",
     icon: "/icons/atom.svg",
     bg: "#4bcb63",
-    link: "https://xiaopengye.kkcloud.org",
+    link: "https://keshavdayalportfolio.vercel.app/",
   },
   {
     id: 4,
@@ -172,7 +177,7 @@ const WORK_LOCATION: Location = {
     {
       id: 5,
       name: "Among Us",
-      icon: "/images/amongusimg.png",
+      icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5",
       windowPosition: "top-[5vh] left-5",
@@ -184,6 +189,7 @@ const WORK_LOCATION: Location = {
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
+          image: "/images/amongusimg.png",
           description: [
             "I created this website for a Hackathon Organized at Microsoft Office. I managed to get 5000+ views in 1 week. This website is built using React, Tailwind CSS and hosted on Vercel.",
           ],
@@ -241,6 +247,7 @@ const WORK_LOCATION: Location = {
           kind: "file",
           fileType: "txt",
           position: "top-5 right-10",
+          image: "/images/prep.png",
           description: [
             "Built a full-stack mock interview platform where an AI voice agent conducts interviews based on role, level, and tech stack. Integrated Google Gemini for automated feedback with detailed scoring across key competencies. Features Firebase authentication, personal dashboard, and responsive UI using Next.js and Tailwind CSS"
           ],
@@ -298,6 +305,7 @@ const WORK_LOCATION: Location = {
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
+          image: "/images/peanuts.png",
           description: [
             "Traditional coding platforms fail to provide an engaging and interactive learning experience, resulting in disengagement, slow skill development, and limited opportunities for connection and career growth among developers. How can a platform be designed to offer a comprehensive, community-driven, and competitive environment that fosters immersive learning, skill mastery, and career advancement for developers of all levels?"
           ],
@@ -355,6 +363,7 @@ const WORK_LOCATION: Location = {
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
+          image: "/images/mm.png",
           description: [
             "Traditional methods of learning machine learning models are often perceived as tedious and challenging. This can result in a lack of motivation and engagement, hindering the learning process. Machine Minds is a game-based learning platform for machine learning concepts that solves these problems."
           ],
@@ -394,6 +403,7 @@ const WORK_LOCATION: Location = {
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
+          image: "/images/algabay.png",
           description: [
             "Redesigned a website for a startup using Spline, React and Tailwind for a better UI"
           ],
@@ -420,7 +430,7 @@ const WORK_LOCATION: Location = {
     },
     {
       id: 10,
-      name: "Builder Sage",
+      name: "Baby Formula UI",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-52 right-10",
@@ -428,11 +438,12 @@ const WORK_LOCATION: Location = {
       children: [
         {
           id: 1,
-          name: "BuilderSage.txt",
+          name: "babyformula.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
+          image: "/images/babyformula.png",
           description: [
             "Converted a Figma Design into a Web App"
           ],
@@ -472,6 +483,7 @@ const WORK_LOCATION: Location = {
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
+          image: "/images/satejinnovations.png",
           description: [
             "Created an E-Commerce Website for a company named Satej Innovations"
           ],
@@ -502,6 +514,7 @@ const WORK_LOCATION: Location = {
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
+          image: "/images/ecom.png",
           description: [
             "Created an E-Commerce Website"
           ],
@@ -580,6 +593,7 @@ const WORK_LOCATION: Location = {
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
+          image: "/images/stock.png",
           description: [
             "A Stock Management Tool"
           ],
@@ -658,6 +672,7 @@ const WORK_LOCATION: Location = {
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
+          image: "/images/allumni.png",   
           description: [
             "Created Alumni Association Website for my college"
           ],
@@ -736,6 +751,7 @@ const WORK_LOCATION: Location = {
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
+          image: "/images/swipe.png",
           description: [
             "Created a Tinder Swiper using React as a Task from Internship"
           ],
@@ -805,6 +821,7 @@ const WORK_LOCATION: Location = {
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
+          image: "/images/editor.png",
           description: [
             "Created an Image Editor Pro using React for an internship assignment"
           ],
@@ -844,6 +861,7 @@ const WORK_LOCATION: Location = {
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
+          image: "/images/foodui.png",
           description: [
             "Practicing front-end by cloning a Food-company UI/UX Design"
           ],
@@ -883,6 +901,7 @@ const WORK_LOCATION: Location = {
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
+          image: "/images/blog.png",
           description: [
             "Created a Blog page Content Management System"
           ],
@@ -922,6 +941,7 @@ const WORK_LOCATION: Location = {
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
+          image: "/images/3d.png",
           description: [
             "Practicing 3D Modeling and Video Editing to get better day by day"
           ],
@@ -937,7 +957,48 @@ const WORK_LOCATION: Location = {
         },
       ],
     },
+    {
+  id: 24,
+  name: "Oomraa",
+  icon: "/images/folder.png",
+  kind: "folder",
+  position: "top-72 right-96",
+  windowPosition: "top-[45vh] right-96",
+  children: [
+    {
+      id: 1,
+      name: "Oomraa.txt",
+      icon: "/images/txt.png",
+      kind: "file",
+      fileType: "txt",
+      position: "top-5 left-10",
+      image: "/images/oomra.png",
+      description: [
+  "Yoga AI Coach a local macOS desktop app that watches you hold a plank and gives real-time spoken corrections when your form breaks down. Runs entirely on-device using MediaPipe Pose for skeleton tracking and Gradium TTS for voice feedback. Analyzes hip alignment, head position, and body angle against configurable sensitivity presets, with a companion Vercel-hosted web app for browser-based sessions."
+],
+    },
+    {
+      id: 2,
+      name: "github.com",
+      icon: "/images/github.png",
+      kind: "file",
+      fileType: "url",
+      href: "https://github.com/keshxvdayal/oomraa",
+      position: "top-10 right-20",
+    },
+    {
+      id: 3,
+      name: "Live Demo",
+      icon: "/images/safari.png",
+      kind: "file",
+      fileType: "url",
+      href: "https://oomraa.vercel.app/",
+      position: "top-32 left-20",
+    },
   ],
+},
+  ],
+  
 };
 
 const ABOUT_LOCATION: Location = {
@@ -950,29 +1011,11 @@ const ABOUT_LOCATION: Location = {
     {
       id: 1,
       name: "me.png",
-      icon: "/images/image.png",
+      icon: "/images/img.jpeg",
       kind: "file",
       fileType: "img",
       position: "top-10 left-5",
-      imageUrl: "/images/Xiaopeng.png",
-    },
-    {
-      id: 2,
-      name: "casual-me.png",
-      icon: "/images/image.png",
-      kind: "file",
-      fileType: "img",
-      position: "top-28 right-72",
-      imageUrl: "/images/Xiaopeng-2.png",
-    },
-    {
-      id: 3,
-      name: "conference-me.png",
-      icon: "/images/image.png",
-      kind: "file",
-      fileType: "img",
-      position: "top-52 left-80",
-      imageUrl: "/images/Xiaopeng-3.png",
+      imageUrl: "/images/img.jpeg",
     },
     {
       id: 4,
@@ -982,12 +1025,13 @@ const ABOUT_LOCATION: Location = {
       fileType: "txt",
       position: "top-60 left-5",
       subtitle: "Meet the Developer Behind the Code",
-      image: "/images/Xiaopeng.png",
+      image: "/images/img.jpeg",
       description: [
-        "Hey! I'm Xiaopeng 👋, a software engineer who's just as comfortable spinning up cloud infra as building snappy frontends.",
-        "I specialize in React, Next.js, Golang, Python, and have a soft spot for Kubernetes, whether in the cloud or tangled up in my homelab with Proxmox VE.",
-        "Turning messy, complex data into slick dashboards and intuitive visualizations is my jam—bonus points if I get to sneak in some AI magic.",
-        "When I'm not pushing code, I'm probably tinkering with my homelab setup, binge-watching DevOps tutorials I swore I needed, or impulse-ordering Raspberry Pi accessories at 1AM 😅.",
+        "Hey! I'm Keshav Dayal 👋, Software Developer with 4+ years of experience designing and shipping scalable",
+        "web applications, distributed systems, and AI-powered tools. Comfortable across the stack from crafting", 
+        "responsive React and Next.js frontends to architecting Python backends with Flask and Django, containerizing", 
+        "with Docker, and working with PostgreSQL at scale. Has worked across federated cloud infrastructure, open-source", 
+        "research platforms, and developer tooling, with a track record of contributing to international research ecosystems and production-grade products.",
       ],
     },
   ],

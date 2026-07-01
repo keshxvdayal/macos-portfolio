@@ -42,15 +42,54 @@ const WindowWrapper = <P extends object>(
     useLayoutEffect(() => {
       const el = ref.current;
       if (!el) return;
+      
+      const draggableInstance = Draggable.get(el);
+      if (draggableInstance) {
+        if (isMaximized) {
+          draggableInstance.disable();
+        } else {
+          draggableInstance.enable();
+        }
+      }
+    }, [isMaximized]);
+
+    useLayoutEffect(() => {
+      const el = ref.current;
+      if (!el) return;
       el.style.display = isOpen ? "block" : "none";
     }, [isOpen]);
+
+    useLayoutEffect(() => {
+      const el = ref.current;
+      if (!el) return;
+      
+      if (isMaximized) {
+        el.style.top = "0";
+        el.style.left = "0";
+        el.style.width = "100dvw";
+        el.style.height = "100dvh";
+        el.style.borderRadius = "0";
+        el.style.maxWidth = "100dvw";
+        el.style.maxHeight = "100dvh";
+      }
+    }, [isMaximized]);
 
     return (
       <section
         id={windowKey}
         ref={ref}
-        style={isMaximized ? { zIndex, inset: 0 } : { zIndex }}
-        className="absolute"
+        style={isMaximized ? { 
+          zIndex, 
+          position: "fixed",
+          top: "56px",
+          left: "0",
+          width: "100dvw",
+          height: "calc(100dvh - 56px)",
+          maxWidth: "100dvw",
+          maxHeight: "calc(100dvh - 56px)",
+          transform: "none"
+        } : { zIndex }}
+        className={`${isMaximized ? 'fixed' : 'absolute'} ${isMaximized ? "maximized" : ""}`}
       >
         <Component {...props} />
       </section>

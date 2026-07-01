@@ -4,6 +4,7 @@ import { Draggable } from "gsap/Draggable";
 import useWindowStore from "@store/window";
 import useLocationStore from "@store/location";
 import type { FileItem, Location } from "@constants/types";
+import FullscreenButton from "./FullscreenButton";
 
 const projects = locations.work?.children ?? [];
 
@@ -46,6 +47,9 @@ const Home = () => {
       </li>
     ))}
   </ul>
+  <div className="fixed bottom-4 right-4">
+  <FullscreenButton />
+</div>
 </section>
   );
 };

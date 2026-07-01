@@ -30,6 +30,7 @@ const App = () => {
       <Navbar />
       <Welcome />
       <Dock />
+      
 
       <Terminal />
       <Safari />
@@ -38,10 +39,13 @@ const App = () => {
       <Text />
       <Image />
       <Contact />
+      
       <Photos />
       <Calendar />
 
       <Home />
+
+      
     </main>
   );
 };

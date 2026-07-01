@@ -11,13 +11,13 @@ const Text = () => {
   const { name, image, subtitle, description } = data;
 
   return (
-    <>
+    <div className="flex flex-col w-full h-full">
       <div id="window-header">
         <WindowControls target="txtfile" />
         <h2>{name}</h2>
       </div>
 
-      <div className="p-5 space-y-6 bg-white">
+      <div className="p-5 space-y-6 bg-white overflow-y-auto flex-1">
         {image ? (
           <div className="w-full">
             <img src={image} alt={name} className="w-full h-auto rounded" />
@@ -36,7 +36,7 @@ const Text = () => {
           </div>
         ) : null}
       </div>
-    </>
+    </div>
   );
 };
 
