@@ -464,7 +464,7 @@ body.boot-complete {
     inset: auto !important;
 
     & > * {
-      @apply !w-full !h-full;
+      @apply !w-full;
     }
   }
 
@@ -498,9 +498,6 @@ body.boot-complete {
     height: calc(100dvh - 56px) !important;
     transform: none !important;
 
-    .content {
-      height: calc(100dvh - 116px) !important;
-    }
   }
 
   section.maximized#contact {
@@ -509,6 +506,7 @@ body.boot-complete {
     height: calc(100dvh - 56px) !important;
     transform: none !important;
   }
+
 
   section.maximized#photos {
     @apply !w-full;
